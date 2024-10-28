@@ -47,7 +47,7 @@ env:
   CLUSTER_RESOURCE_GROUP: aks-test-01
   CLUSTER_NAME: sw-testska-01
   DOCKER_FILE: ./src/order-service/Dockerfile
-  BUILD_CONTEXT_PATH: ./
+  BUILD_CONTEXT_PATH: ./src/order-service
   CHART_PATH: ./charts/aks-store-demo
   CHART_OVERRIDE_PATH: ./charts/aks-store-demo/values.yaml
   CHART_OVERRIDES: image.repository=acrworkflow1730088778828.azurecr.io/image-workflow-1730088778828,image.tag=${{ github.sha }}
