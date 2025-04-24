@@ -47,7 +47,7 @@ env:
   DEPLOYMENT_MANIFEST_PATH: |
     ./virtual-worker.yaml
   DOCKER_FILE: ./src/virtual-worker/Dockerfile
-  BUILD_CONTEXT_PATH: ./
+  BUILD_CONTEXT_PATH: ./src/virtual-worker/
   NAMESPACE: contoso-store
   ENABLENAMESPACECREATION: false
   AUTH_TYPE: SERVICE_PRINCIPAL
