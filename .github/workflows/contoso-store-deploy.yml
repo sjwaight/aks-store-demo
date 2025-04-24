@@ -40,7 +40,7 @@ on:
 env:
   ACR_RESOURCE_GROUP: rg-contoso-02
   AZURE_CONTAINER_REGISTRY: contoso03
-  CONTAINER_NAME: image-workflow-1745456732991
+  CONTAINER_NAME: virtual-worker
   CLUSTER_NAME: flt-contoso-03
   CLUSTER_RESOURCE_GROUP: rg-contoso-02
   CLUSTER_RESOURCE_TYPE: Microsoft.ContainerService/fleets
