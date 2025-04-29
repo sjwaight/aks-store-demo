@@ -1,0 +1,17 @@
+apiVersion: placement.kubernetes-fleet.io/v1
+kind: ClusterResourcePlacement
+metadata:
+  name: distribute-virtual-worker-two-regions
+spec:
+  resourceSelectors:
+    - group: ""
+      kind: Namespace
+      version: v1          
+      name: contoso-store
+  policy:
+    placementType: PickN
+    numberOfClusters: 2
+    topologySpreadConstraints:
+    - maxSkew: 1
+      topologyKey: region
+      whenUnsatisfiable: DoNotSchedule

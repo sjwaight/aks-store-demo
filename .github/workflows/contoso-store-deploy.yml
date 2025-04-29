@@ -46,6 +46,7 @@ env:
   CLUSTER_RESOURCE_TYPE: Microsoft.ContainerService/fleets
   DEPLOYMENT_MANIFEST_PATH: |
     ./virtual-worker.yaml
+    ./fleet/deploy-contoso-store-two-regions.yaml
   DOCKER_FILE: ./src/virtual-worker/Dockerfile
   BUILD_CONTEXT_PATH: ./src/virtual-worker/
   NAMESPACE: contoso-store
@@ -163,4 +164,3 @@ jobs:
           private-cluster: ${{ steps.isPrivate.outputs.PRIVATE_CLUSTER == 'true' }}
           namespace: ${{ env.NAMESPACE }}
           resource-type: ${{ env.CLUSTER_RESOURCE_TYPE }}
-
