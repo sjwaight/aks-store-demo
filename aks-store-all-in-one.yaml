@@ -232,7 +232,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: order-service
-annotations:
+  annotations:
     service.cilium.io/global: "true"
 spec:
   type: ClusterIP
@@ -315,7 +315,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: makeline-service
-annotations:
+  annotations:
     service.cilium.io/global: "true"
 spec:
   type: ClusterIP
@@ -376,7 +376,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: product-service
-annotations:
+  annotations:
     service.cilium.io/global: "true"
 spec:
   type: ClusterIP
