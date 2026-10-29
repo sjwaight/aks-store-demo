@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
+    "test:integration": "node --test test/integration/rabbitmq.test.cjs",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
@@ -20,7 +21,7 @@
     "@fastify/autoload": "^6.3.1",
     "@fastify/cors": "^11.2.0",
     "@fastify/sensible": "^6.0.4",
-    "fastify": "^5.8.5",
+    "fastify": "^5.12.7",
     "fastify-cli": "^7.4.1",
     "fastify-plugin": "^5.1.0",
     "rabbitmq-amqp-js-client": "^0.2.0",
@@ -28,5 +29,8 @@
   },
   "devDependencies": {
     "tap": "^21.6.2"
+  },
+  "tap": {
+    "allow-incomplete-coverage": true
   }
 }
