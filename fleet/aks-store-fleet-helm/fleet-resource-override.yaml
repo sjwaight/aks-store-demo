@@ -23,7 +23,9 @@ spec:
       - clusterSelector:
           clusterSelectorTerms:
             - labelSelector:
-                matchExpressions: []
+                matchExpressions:
+                  - key: appgroup
+                    operator: Exists
         jsonPatchOverrides:
           - op: remove
             path: /spec/suspend
